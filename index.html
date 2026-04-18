@@ -218,19 +218,19 @@ footer{background:var(--blush);border-top:0.5px solid rgba(196,103,138,0.18);pad
   <div class="products-grid">
     <div class="product-card">
       <div class="product-img"><div class="product-emoji">🌸</div><span class="product-badge">Best Seller</span></div>
-      <div class="product-body"><div class="product-name">Princess</div><div class="product-type">Natural Lashes</div><div class="product-desc">Soft, delicate clusters for an effortlessly beautiful everyday look. Perfect for the girl who wants to enhance, not transform.</div><div class="product-footer"><div class="product-price">$44.99</div><button class="add-btn" onclick="addToCart('Princess Lashes')">Add to cart</button></div></div>
+      <div class="product-body"><div class="product-name">Princess</div><div class="product-type">Natural Lashes</div><div class="product-desc">Soft, delicate clusters for an effortlessly beautiful everyday look. Perfect for the girl who wants to enhance, not transform.</div><div class="product-footer"><div class="product-price">$44.99</div><button class="add-btn" onclick="addToCart('Princess Lashes'); window.open('https://buy.stripe.com/test_aFa7sKajGcSH0cXfVF4wM00', '_blank')">Add to cart</button></div></div>
     </div>
     <div class="product-card">
       <div class="product-img" style="background:#fce8f5"><div class="product-emoji">💖</div></div>
-      <div class="product-body"><div class="product-name">Barbie</div><div class="product-type">High Volume Lashes</div><div class="product-desc">Full, glamorous and unapologetically extra. For the girl who lives in pink and always shows up dressed to impress.</div><div class="product-footer"><div class="product-price">$44.99</div><button class="add-btn" onclick="addToCart('Barbie Lashes')">Add to cart</button></div></div>
+      <div class="product-body"><div class="product-name">Barbie</div><div class="product-type">High Volume Lashes</div><div class="product-desc">Full, glamorous and unapologetically extra. For the girl who lives in pink and always shows up dressed to impress.</div><div class="product-footer"><div class="product-price">$44.99</div><button class="add-btn" onclick="addToCart('Barbie Lashes'); window.open('https://buy.stripe.com/test_aFa7sKajGcSH0cXfVF4wM00', '_blank')">Add to cart</button></div></div>
     </div>
     <div class="product-card">
       <div class="product-img" style="background:#f5eaf2"><div class="product-emoji">🌙</div></div>
-      <div class="product-body"><div class="product-name">Yandere</div><div class="product-type">Manga Lashes</div><div class="product-desc">Big, bold and doll-like with a hint of obsession. Spiky separated clusters for that anime-inspired wide-eyed look.</div><div class="product-footer"><div class="product-price">$44.99</div><button class="add-btn" onclick="addToCart('Yandere Lashes')">Add to cart</button></div></div>
+      <div class="product-body"><div class="product-name">Yandere</div><div class="product-type">Manga Lashes</div><div class="product-desc">Big, bold and doll-like with a hint of obsession. Spiky separated clusters for that anime-inspired wide-eyed look.</div><div class="product-footer"><div class="product-price">$44.99</div><button class="add-btn" onclick="addToCart('Yandere Lashes'); window.open('https://buy.stripe.com/test_aFa7sKajGcSH0cXfVF4wM00', '_blank')">Add to cart</button></div></div>
     </div>
     <div class="product-card">
       <div class="product-img" style="background:#fce8f0"><div class="product-emoji">🦊</div></div>
-      <div class="product-body"><div class="product-name">Foxy</div><div class="product-type">Fox Eye Lashes</div><div class="product-desc">Elongated and lifted at the outer corners for a sleek, flirtatious fox-eye effect. Playful on the outside, fierce underneath.</div><div class="product-footer"><div class="product-price">$44.99</div><button class="add-btn" onclick="addToCart('Foxy Lashes')">Add to cart</button></div></div>
+      <div class="product-body"><div class="product-name">Foxy</div><div class="product-type">Fox Eye Lashes</div><div class="product-desc">Elongated and lifted at the outer corners for a sleek, flirtatious fox-eye effect. Playful on the outside, fierce underneath.</div><div class="product-footer"><div class="product-price">$44.99</div><button class="add-btn" onclick="addToCart('Foxy Lashes'); window.open('https://buy.stripe.com/test_aFa7sKajGcSH0cXfVF4wM00', '_blank')">Add to cart</button></div></div>
     </div>
   </div>
 </section>
@@ -603,6 +603,7 @@ function selectColour(btn, name){
 function addToCartColour(){
   const colour = document.getElementById('selectedColour').textContent;
   addToCart('Kitty Nails — ' + colour + ' Cat');
+  window.open('https://buy.stripe.com/test_9B6fZgcrOdWLaRB9xh4wM02', '_blank');
   openCart();
 }
 
