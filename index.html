@@ -528,10 +528,14 @@ function closeCart(){
 
 function checkout(){
   if(cartItems.length===0) return;
-  const t=document.getElementById("toast");
-  t.textContent="🌸 Checkout coming soon! DM us on Instagram to order";
-  t.classList.add("show");
-  setTimeout(()=>t.classList.remove("show"),4000);
+  const hasNails = cartItems.some(i => i.name.includes('Kitty'));
+  const hasLashes = cartItems.some(i => !i.name.includes('Kitty'));
+  if(hasLashes){
+    window.open('https://buy.stripe.com/test_fZucN4fE019Zf7RaBl4wM03', '_blank');
+  }
+  if(hasNails){
+    window.open('https://buy.stripe.com/test_fZueVc63qg4T8JtbFp4wM04', '_blank');
+  }
 }
 
 async function sendMsg(){
